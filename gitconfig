@@ -12,6 +12,10 @@
   co = checkout
   pf = push --force-with-lease
   st = status
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  di = diff
+  diw = diff --word-diff=color
+  rbi = rebase --interactive --autosquash
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
