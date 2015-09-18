@@ -1,5 +1,4 @@
-thoughtbot dotfiles
-===================
+Yepeng's dotfiles.
 
 ![prompt](http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png)
 
