@@ -31,3 +31,6 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[user]
+  email = yepeng.fan@hotmail.com
+  name = Yepeng Fan
