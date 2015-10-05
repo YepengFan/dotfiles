@@ -1,4 +1,5 @@
-Yepeng's dotfiles.
+## Yepeng's dotfiles settings 
+Inspired from [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles)
 
 ![prompt](http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png)
 
