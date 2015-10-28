@@ -162,6 +162,7 @@ nnoremap ]r :ALENextWrap<CR>
 nnoremap [r :ALEPreviousWrap<CR>
 
 " Vimux key binding more info (:help vimux)
+let g:VimuxOrientation = "h"
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vm :VimuxPromptCommand("make ")<CR>"
 map <Leader>vq :VimuxCloseRunner<CR>
