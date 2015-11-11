@@ -1,6 +1,5 @@
 autoconf
 automake
-brew-cask
 cairo
 cask
 ccat
