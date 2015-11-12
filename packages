@@ -1,5 +1,6 @@
 autoconf
 automake
+brew-cask
 cairo
 cask
 ccat
@@ -15,6 +16,7 @@ fontforge
 fpp
 freetype
 fzf
+gawk
 gdbm
 gettext
 git
