@@ -1,5 +1,6 @@
 autoconf
 automake
+boost
 brew-cask
 cairo
 cask
@@ -10,6 +11,7 @@ ctags
 czmq
 direnv
 docker
+dos2unix
 emacs
 fontconfig
 fontforge
@@ -49,12 +51,15 @@ pcre
 pick
 pixman
 pkg-config
+pyqt
+qt
 rbenv
 rcm
 readline
 reattach-to-user-namespace
 redis
 ruby-build
+sip
 the_silver_searcher
 tmux
 urlview
