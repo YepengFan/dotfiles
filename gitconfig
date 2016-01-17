@@ -20,7 +20,6 @@
   excludesfile = ~/.gitignore
   autocrlf = input
 [merge]
-  ff = only
 	tool = diffmerge
 [commit]
   template = ~/.gitmessage
