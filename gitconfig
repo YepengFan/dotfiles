@@ -18,7 +18,7 @@
   rbi = rebase --interactive --autosquash
 [core]
   excludesfile = ~/.gitignore
-  autocrlf = input
+	autocrlf = false
 [merge]
 	tool = diffmerge
 [commit]
@@ -41,3 +41,5 @@
 [mergetool "diffmerge"]
 	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
 	trustExitCode = true
+[gc]
+	auto = 0
