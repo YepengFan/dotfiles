@@ -103,6 +103,10 @@ if executable('ag')
 endif
 
 " Make it obvious where 80 characters is
+set wrap
+set linebreak
+set nolist  " list disables linebreak
+set formatoptions+=w
 set textwidth=80
 set colorcolumn=+1
 
