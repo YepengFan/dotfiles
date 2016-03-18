@@ -1,0 +1,115 @@
+# modify the prompt to contain git branch name if applicable
+git_prompt_info() {
+  current_branch=$(git current-branch 2> /dev/null)
+  if [[ -n $current_branch ]]; then
+    echo " %{$fg_bold[green]%}$current_branch%{$reset_color%}"
+  fi
+}
+setopt promptsubst
+if [[ $TERM == xterm ]]; then TERM=xterm-256color; fi
+export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) %# '
+
+# load our own completion functions
+fpath=(~/.zsh/completion /usr/local/share/zsh/site-functions $fpath)
+
+# set tab completion should be case-insensitive
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# completion
+autoload -U compinit
+compinit
+
+# makes color constants available
+autoload -U colors
+colors
+
+# enable colored output from ls, etc
+export CLICOLOR=1
+
+# history settings
+setopt hist_ignore_all_dups inc_append_history
+HISTFILE=~/.zhistory
+HISTSIZE=4096
+SAVEHIST=4096
+
+# awesome cd movements from zshkit
+setopt autocd autopushd pushdminus pushdsilent pushdtohome cdablevars
+DIRSTACKSIZE=5
+
+# Enable extended globbing
+setopt extendedglob
+
+# Allow [ or ] whereever you want
+unsetopt nomatch
+
+# vi mode
+bindkey -v
+bindkey "^F" vi-cmd-mode
+bindkey jj vi-cmd-mode
+
+# handy keybindings
+bindkey "^A" beginning-of-line
+bindkey "^E" end-of-line
+bindkey "^K" kill-line
+bindkey "^R" history-incremental-search-backward
+bindkey "^P" history-search-backward
+bindkey "^Y" accept-and-hold
+bindkey "^N" insert-last-word
+bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+
+# Launch tmux at start
+if [ "$TMUX" = "" ]; then tmux; fi
+
+# Support node version manager
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+source ~/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+antigen bundle unixorn/autoupdate-antigen.zshplugin
+antigen bundle sharat87/pip-app
+antigen bundle chrissicool/zsh-256color
+antigen bundle Tarrasch/zsh-bd
+antigen bundle clvv/fasd # Need manual installation
+antigen bundle b4b4r07/enhancd
+antigen bundle zsh-users/zsh-completions
+
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Set fish-style zsh-autosuggestions
+antigen bundle tarruda/zsh-autosuggestions
+
+# Enable zsh-history-substring-search
+antigen bundle zsh-users/zsh-history-substring-search
+
+# Enable autosuggestions automatically.
+# zle-line-init() { zle autosuggest-start }; zle -N zle-line-init
+
+# Enable fasd
+eval "$(fasd --init auto)"
+bindkey '^X^A' fasd-complete    # C-x C-a to do fasd-complete (fils and directories)
+bindkey '^X^F' fasd-complete-f  # C-x C-f to do fasd-complete-f (only files)
+bindkey '^X^D' fasd-complete-d  # C-x C-d to do fasd-complete-d (only directories)
+
+# Load the theme.
+antigen theme miloshadzic
+
+plugins+=(zsh-completions)
+autoload -U compinit && compinit
+
+# Tell antigen that you're done.
+antigen apply
