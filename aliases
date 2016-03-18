@@ -6,13 +6,6 @@ alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
 
-# GitX
-alias gitx="open -a \"GitX\" ."
-
-# Interactive fuzzy picker
-alias gsb="g checkout \$(g branch | pick)"
-alias vsf="vim \$(g ls-files | pick)"
-
 # Bundler
 alias b="bundle"
 
