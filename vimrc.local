@@ -1,0 +1,108 @@
+" Code folding settings
+" `za` - toggles
+" `zc` - closes
+" `zo` - opens
+" `zR` - open all
+" `zM` - close all
+set foldmethod=indent   " fold based on indent
+set foldnestmax=10      " deepest fold is 10 levels
+set nofoldenable        " dont fold by default
+set foldlevel=1         " this is just what i use
+
+" Enable vim-flog code smell check
+silent exe "g:flog_enable"
+
+" Remap simple todo shortcuts
+" Disable default key bindings
+let g:simple_todo_map_keys = 0
+" Map keys
+nmap <leader>i <Plug>(simple-todo-new-start-of-line)
+nmap <leader>x <Plug>(simple-todo-mark-as-done)
+nmap <leader>X <Plug>(simple-todo-mark-as-undone)
+
+" Remap shortcuts in insert mode
+inoremap <c-d> <Del>
+inoremap <c-a> <Home>
+inoremap <c-h> <BS>
+inoremap <c-e> <End>
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+" Tab bar toggle
+nmap <c-t> :TagbarToggle<CR>
+
+" Set vim to use relative number
+set relativenumber 
+set number
+autocmd InsertEnter * :set number norelativenumber
+autocmd InsertLeave * :set relativenumber
+
+" My color scheme
+syntax on
+set background=dark " Setting dark mode
+color gruvbox
+
+" Set plugin vim-airline theme
+let g:airline_theme='dark'
+let g:airline_powerline_fonts = 1
+
+" Configure Easymotion
+map \ <Plug>(easymotion-prefix)
+map / <Plug>(easymotion-sn)
+" map n <Plug>(easymotion-next)
+" map N <Plug>(easymotion-prev)
+
+" Easymotion smart search
+let g:EasyMotion_smartcase = 1
+
+" Integrate search with ack.vim
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Configure cursor for tmux running in iTerm2 on OS X
+let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+
+" set autoread with vim-tmux-focus-events
+set autoread
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
+
+" zoom a vim pane, <C-w>= to re-balance
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
+
+" set vim to use system clipboard
+set clipboard=unnamed
+
+" Make it obvious where 80 characters is
+set wrap
+set linebreak
+set nolist  " list disables linebreak
+set formatoptions+=w
+
+" Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing
+let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
+
+" Index ctags from any project, including those outside Rails
+map <Leader>ct :!ctags -R .<CR>
+
+" vim-rspec mappings
+nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
+nnoremap <Leader>s :call RunNearestSpec()<CR>
+nnoremap <Leader>l :call RunLastSpec()<CR>
+
+" let g:rspec_runner = "os_x_iterm2"
+let g:rspec_command = "Dispatch rspec {spec}"
+
+" Vimux key binding more info (:help vimux)
+let g:VimuxOrientation = "h"
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vm :VimuxPromptCommand("make ")<CR>"
+map <Leader>vq :VimuxCloseRunner<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vi :VimuxInspectRunner<CR>
