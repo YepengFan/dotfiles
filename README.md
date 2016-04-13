@@ -53,7 +53,7 @@ remove/uninstall plugins not on the plugin list.
 
 ### Keep fork updated
 #### Track upstream repo
-* git clone git@github.com:croaky/dotfiles.git
+* git clone git@github.com:yepengfan/dotfiles.git
 * cd dotfiles
 * git remote add upstream git@github.com:thoughtbot/dotfiles.git
 
