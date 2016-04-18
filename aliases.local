@@ -5,3 +5,4 @@ alias gitx="open -a \"GitX\" ."
 alias gsb="g checkout \$(g branch | pick)"
 alias vsf="vim \$(g ls-files | pick)"
 
+alias omdev="ssh ubuntu@omdev.io"
