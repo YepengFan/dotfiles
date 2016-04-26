@@ -3,6 +3,8 @@
   di = diff
   diw = diff --word-diff=color
   rbi = rebase --interactive --autosquash
+  ps = push
+  pl = pull
 [merge]
 	tool = diffmerge
 [user]
