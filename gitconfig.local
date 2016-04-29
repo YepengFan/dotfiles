@@ -5,6 +5,7 @@
   rbi = rebase --interactive --autosquash
   ps = push
   pl = pull
+  df = diff
 [merge]
 	tool = diffmerge
 [user]
