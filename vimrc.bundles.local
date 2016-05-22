@@ -20,7 +20,11 @@ Plug 'majutsushi/tagbar'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'mileszs/ack.vim'
 Plug 'morhetz/gruvbox'
-Plug 'msanders/snipmate.vim'
+" Plug 'msanders/snipmate.vim'
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
+" Track the engine.
+Plug 'SirVer/ultisnips'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown/'
