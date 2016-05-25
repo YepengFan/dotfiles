@@ -64,6 +64,9 @@ bind r source-file ~/.tmux.conf \; display "source file reloaded!"
 # enable tmux-focus-event.vim
 set -g focus-events on
 
+set -g @continuum-boot 'on'
+set -g @continuum-boot-options 'iterm,fullscreen'
+
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
 
