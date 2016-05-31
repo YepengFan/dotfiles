@@ -1,0 +1,42 @@
+# ~/.tmuxinator/template.yml
+
+name: ppc
+root: $(project_root)
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+# post: tmux -CC attach -t ppc
+
+windows:
+  - editor: vim
+  - server: 
+      layout: a985,272x69,0,0{136x69,0,0,32,135x69,137,0,92}
+      panes:
+        - 
+        - bundle exec rails s
+  - console: 
+       layout: c9f8,190x41,0,0[190x20,0,0,190x20,0,21{95x20,0,21,94x20,96,21}]
+       panes:
+        - bundle exec rails c
+        - bundle exec guard
+        - tail -f log/development.log
