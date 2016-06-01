@@ -48,10 +48,17 @@ let g:airline_powerline_fonts = 1
 
 set hlsearch
 " Configure Easymotion
-map \ <Plug>(easymotion-prefix)
+" map \ <Plug>(easymotion-prefix)
 map / <Plug>(easymotion-sn)
 " map n <Plug>(easymotion-next)
 " map N <Plug>(easymotion-prev)
+
+" bind \ (backward slash) to grep shortcut
+command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+nnoremap \ :Ag<SPACE>
+
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " Easymotion smart search
 let g:EasyMotion_smartcase = 1
