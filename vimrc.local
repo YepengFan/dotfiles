@@ -146,3 +146,5 @@ syntax on
 filetype plugin indent on
 
 let g:UltiSnipsExpandTrigger="<tab>"
+
+let g:neocomplete#enable_at_startup = 1
