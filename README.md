@@ -47,10 +47,6 @@ remove/uninstall plugins not on the plugin list.
 * Check brew package file [packages](./packages)
 * To install all listed packages, run `./brew_install_packages.sh`
 
-### Manual Installation
-#### Vim plugins
-* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
-
 ### Keep fork updated
 #### Track upstream repo
 * git clone git@github.com:yepengfan/dotfiles.git
