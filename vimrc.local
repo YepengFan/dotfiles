@@ -54,7 +54,7 @@ map / <Plug>(easymotion-sn)
 " map N <Plug>(easymotion-prev)
 
 " bind \ (backward slash) to grep shortcut
-command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+" command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 nnoremap \ :Ag<SPACE>
 
 " bind K to grep word under cursor
