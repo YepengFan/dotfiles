@@ -28,9 +28,6 @@ inoremap <c-a> <Home>
 inoremap <c-h> <BS>
 inoremap <c-e> <End>
 
-" Tab bar toggle
-nmap <c-t> :TagbarToggle<CR>
-
 " Set vim to use relative number
 set relativenumber 
 set number
