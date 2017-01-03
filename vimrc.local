@@ -11,6 +11,27 @@ set foldlevel=1         " this is just what i use
 
 set completeopt-=preview
 
+" Nerdtree-git-plugin
+let g:NERDTreeIndicatorMapCustom = {
+      \ "Modified"  : "✹",
+      \ "Staged"    : "✚",
+      \ "Untracked" : "✭",
+      \ "Renamed"   : "➜",
+      \ "Unmerged"  : "═",
+      \ "Deleted"   : "✖",
+      \ "Dirty"     : "✗",
+      \ "Clean"     : "✔︎",
+      \ "Unknown"   : "?"
+      \ }
+
+" Nerdtree config
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+map <C-c> :NERDTreeToggle<CR>
+
 " Ignore files in gitignore
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
