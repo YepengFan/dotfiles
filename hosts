@@ -1,0 +1,116 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+
+## vagrant-hostmanager-start id: 8b07067f-c053-4966-aabc-095305a613de
+10.2.2.4	netball.dev
+172.30.5.27 outware.io
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 729a3574-3dcc-41e5-955f-0f0949cef91a
+10.2.3.4	sss-reporting.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 6c785936-8dcc-4978-8ca9-3f427c6c5308
+10.2.3.4	sss-reporting.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: a08c48aa-7404-471e-a0c5-40ff90a66191
+10.2.2.22	stubs.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 01ea71ed-07ae-4a5d-8d08-c7501673cd48
+10.2.2.22	stubs.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: b1f4d1c0-0fbf-4887-9693-8400d70eb6bf
+10.2.2.22	stubs.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 00983360-bd79-473e-af2a-5f2c111d4e5b
+10.2.2.7	jenkins.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: df56aedc-9279-418f-b766-4b29bb5cd33a
+10.2.2.4	HOSTNAME.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 96f1a5e7-2008-4715-8eda-899e208a1412
+10.2.2.4	omrails.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 340371d6-cb73-4410-9fb0-72c782e090e1
+10.2.2.4	peoplecare.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 03eb3608-e485-4140-9356-e0870b6f4c4e
+10.2.2.4	om-provisioning.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: f942ac0c-069f-4e5b-9314-e79c8a43149e
+10.2.4.4	bacon-is.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 7acad39a-9da5-4639-aebf-687bb41e6dbe
+10.2.2.11	outware.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 7089c6d8-f4cb-4ae9-813e-43d05dab42c9
+10.2.2.4	netball.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 008168e1-13e4-49d6-bf11-c1372b336183
+10.2.2.4	qbe.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 5908ce24-9ef1-4dd5-8deb-7a7cc0d997d1
+10.2.2.113	qbe.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 03218b9b-7c87-4790-80d1-95145a6d845e
+10.2.2.113	qbe.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 57726e2d-71ea-4e3e-aafc-308151799ba5
+10.2.2.113	qbe.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: e4bbe31c-9cbd-4dfa-b8a4-06a3707434f2
+10.2.2.113	qbe.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: b55b8bf2-ea23-4a03-bf83-d45c935c77fe
+10.2.2.113	qbe.dev
+
+## vagrant-hostmanager-end
+
+## vagrant-hostmanager-start id: 6d34d06b-7236-40d7-b550-b4a851a5c1a3
+10.2.2.4	jwt-poc.local
+
+## vagrant-hostmanager-end
+158.69.209.100 music.163.com
