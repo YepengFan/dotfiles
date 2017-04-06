@@ -24,6 +24,9 @@ settings as well as plugins.
 * Vim plugins: `vimrc.bundles`
 * Tmux plugins: `tmux.conf`
 
+### Tmux initialization
+* Run `<Prefix> + I` to install all the plugins first
+
 ### Plugin Updates
 * The zsh plugins are managed by
   [antigen](https://github.com/zsh-users/antigen). They will be automatically
