@@ -50,6 +50,16 @@ remove/uninstall plugins not on the plugin list.
 * Check brew package file [packages](./packages)
 * To install all listed packages, run `./brew_install_packages.sh`
 
+### Install eslint style checker
+
+```
+npm install -g eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+```
+
+```
+eslint --init
+```
+
 ### Keep fork updated
 #### Track upstream repo
 * git clone git@github.com:yepengfan/dotfiles.git
