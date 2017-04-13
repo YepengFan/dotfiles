@@ -1,0 +1,34 @@
+{
+  "name": "tedfan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.6.12",
+    "escape-string-regexp": "^1.0.5",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "jsesc": "^2.3.0",
+    "moment-timezone": "^0.5.11",
+    "serverless-python-individually": "^0.1.1",
+    "serverless-python-requirements": "^1.2.0",
+    "string-escape": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ted Fan",
+  "license": "ISC"
+}
