@@ -174,7 +174,6 @@ let g:syntastic_eruby_ruby_quiet_messages =
 nnoremap <space>ru :SyntasticCheck rubocop<CR>
 
 " fugitive git bindings
-nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <space>gs :Gstatus<CR>
 nnoremap <space>gc :Gcommit -v -q<CR>
 nnoremap <space>gt :Gcommit -v -q %:p<CR>
