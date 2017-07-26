@@ -115,7 +115,7 @@ nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
 " set vim to use system clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Make it obvious where 80 characters is
 set wrap
