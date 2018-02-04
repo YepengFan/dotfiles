@@ -1,5 +1,4 @@
 " Define bundles via Github repos
-Plug 'Valloric/YouCompleteMe'
 Plug '29decibel/vim-stringify'
 Plug 'airblade/vim-gitgutter'
 Plug 'benmills/vimux'
