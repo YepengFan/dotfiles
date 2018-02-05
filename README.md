@@ -71,3 +71,6 @@ eslint --init
 * git rebase upstream/master
 
 **Please change the** `user info` **in gitconfig to yourself if you fork this repo**
+
+### Instructions to setup eslint in vim
+https://remarkablemark.org/blog/2016/09/28/vim-syntastic-eslint/
