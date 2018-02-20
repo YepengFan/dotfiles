@@ -37,6 +37,9 @@ check while zsh started.
   Run `<Prefix> + U` will update tmux plugins and run `<Prefix> + alt + u` will
 remove/uninstall plugins not on the plugin list.
 
+### Display tmux layout
+`tmux list-windows`
+
 ### Airline font settings
 * Clone powerline fonts from
   [powerline/fonts](https://github.com/Lokaltog/powerline-fonts)
