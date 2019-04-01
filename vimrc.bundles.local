@@ -27,3 +27,11 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/gv.vim'
 Plug 'svermeulen/vim-easyclip'
 Plug 'Raimondi/delimitMate'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1

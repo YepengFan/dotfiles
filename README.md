@@ -77,3 +77,6 @@ eslint --init
 
 ### Instructions to setup eslint in vim
 https://remarkablemark.org/blog/2016/09/28/vim-syntastic-eslint/
+
+### Set up deoplete in vim
+https://github.com/Shougo/deoplete.nvim#requirements

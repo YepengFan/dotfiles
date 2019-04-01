@@ -48,7 +48,7 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Enable vim-flog code smell check
-silent exe "g:flog_enable"
+" silent exe "g:flog_enable"
 
 " Remap simple todo shortcuts
 " Disable default key bindings
@@ -157,21 +157,17 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_
 nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 
 let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
 
-" enable syntastic for javascript files
-" let g:syntastic_javascript_checkers = ['eslint', 'flow']
-" let g:syntastic_javascript_flow_exe = 'flow'
-
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
-let g:syntastic_ruby_checkers=['rubocop']
+" let g:syntastic_ruby_checkers=['rubocop']
 let g:syntastic_eruby_ruby_quiet_messages =
     \ {"regex": "possibly useless use of a variable in void context"}
-nnoremap <space>ru :SyntasticCheck rubocop<CR>
+" nnoremap <space>ru :SyntasticCheck rubocop<CR>
 
 " fugitive git bindings
 nnoremap <space>gs :Gstatus<CR>
@@ -277,3 +273,5 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+set pyxversion=3
+set encoding=utf-8
