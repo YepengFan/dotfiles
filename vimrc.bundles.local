@@ -19,7 +19,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-rbenv'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/matchit.zip'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Shougo/neocomplete.vim'
 Plug 'sheerun/vim-polyglot'
@@ -27,11 +27,11 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/gv.vim'
 Plug 'svermeulen/vim-easyclip'
 Plug 'Raimondi/delimitMate'
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-let g:deoplete#enable_at_startup = 1
+" if has('nvim')
+"   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+"   Plug 'Shougo/deoplete.nvim'
+"   Plug 'roxma/nvim-yarp'
+"   Plug 'roxma/vim-hug-neovim-rpc'
+" endif
+" let g:deoplete#enable_at_startup = 1

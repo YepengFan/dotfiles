@@ -63,8 +63,6 @@ bindkey "^Y" accept-and-hold
 bindkey "^N" insert-last-word
 bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 
 # Launch tmux at start
