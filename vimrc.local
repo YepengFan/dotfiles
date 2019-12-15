@@ -278,4 +278,4 @@ endif
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 set pyxversion=3
 set encoding=utf-8
-nnoremap * :keepjumps normal! mi*`i<CR>`
+nnoremap * m`:keepjumps normal! *<cr>``
